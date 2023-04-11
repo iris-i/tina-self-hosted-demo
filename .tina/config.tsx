@@ -8,38 +8,38 @@ import { iconSchema } from "../components/util/icon";
 
 const config = defineConfig({
   contentApiUrlOverride: "/api/gql",
-  admin: {
-    auth: {
-      useLocalAuth: process.env.TINA_PUBLIC_IS_LOCAL === "true",
+  // admin: {
+  //   auth: {
+  //     useLocalAuth: process.env.TINA_PUBLIC_IS_LOCAL === "true",
 
-      // Uncomment this to use custom auth
-      // customAuth: true,
-      // authenticate: async () => {
-      //   // Add your authentication logic here
-      //   localStorage.setItem(LOCAL_KEY, "some-token");
-      // },
-      // getToken: async () => {
-      //   // Add your own getting token
-      //   const token = localStorage.getItem(LOCAL_KEY);
-      //   if (!token) {
-      //     return { id_token: "" };
-      //   }
-      //   return { id_token: token };
-      // },
-      // getUser: async () => {
-      //   // Add your own getting user
-      //   // if this function returns a truthy value, the user is logged in and if it rutnrs
-      //   if (localStorage.getItem(LOCAL_KEY)) {
-      //     return true;
-      //   }
-      //   return false;
-      // },
-      // logout: async () => {
-      //   // add your own logout logic
-      //   localStorage.removeItem(LOCAL_KEY);
-      // },
-    },
-  },
+  //     // Uncomment this to use custom auth
+  //     // customAuth: true,
+  //     // authenticate: async () => {
+  //     //   // Add your authentication logic here
+  //     //   localStorage.setItem(LOCAL_KEY, "some-token");
+  //     // },
+  //     // getToken: async () => {
+  //     //   // Add your own getting token
+  //     //   const token = localStorage.getItem(LOCAL_KEY);
+  //     //   if (!token) {
+  //     //     return { id_token: "" };
+  //     //   }
+  //     //   return { id_token: token };
+  //     // },
+  //     // getUser: async () => {
+  //     //   // Add your own getting user
+  //     //   // if this function returns a truthy value, the user is logged in and if it rutnrs
+  //     //   if (localStorage.getItem(LOCAL_KEY)) {
+  //     //     return true;
+  //     //   }
+  //     //   return false;
+  //     // },
+  //     // logout: async () => {
+  //     //   // add your own logout logic
+  //     //   localStorage.removeItem(LOCAL_KEY);
+  //     // },
+  //   },
+  // },
   clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID!,
   branch:
     process.env.NEXT_PUBLIC_TINA_BRANCH! || // custom branch env override
